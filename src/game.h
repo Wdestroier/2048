@@ -11,4 +11,4 @@ extern char* game_executable_path;
 
 extern ALLEGRO_DISPLAY* game_display;
 
-void game_run();
+void game_run(char* executable_path);

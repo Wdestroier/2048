@@ -2,10 +2,10 @@
 
 #include <allegro5/allegro.h>
 
-#include "logger.h"
+#include "game_logger.h"
 #include "game_keyboard.h"
 #include "game_renderer.h"
-#include "grid.h"
+#include "game_grid.h"
 
 void keyboard_keypress(int keycode)
 {

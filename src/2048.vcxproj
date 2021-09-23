@@ -159,29 +159,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="font_renderer.c" />
+    <ClCompile Include="game_font.c" />
     <ClCompile Include="game.c" />
     <ClCompile Include="game_keyboard.c" />
     <ClCompile Include="game_mouse.c" />
-    <ClCompile Include="grid.c" />
+    <ClCompile Include="game_grid.c" />
     <ClCompile Include="grid_movement.c" />
-    <ClCompile Include="logger.c" />
+    <ClCompile Include="game_logger.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="game_renderer.c" />
-    <ClCompile Include="resource.c" />
+    <ClCompile Include="game_resource.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="resource_font.h" />
-    <ClInclude Include="resource_icon.h" />
-    <ClInclude Include="font_renderer.h" />
+    <ClInclude Include="resource_helvetica_font.h" />
+    <ClInclude Include="resource_display_icon.h" />
+    <ClInclude Include="game_font.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="game_keyboard.h" />
     <ClInclude Include="game_mouse.h" />
     <ClInclude Include="game_renderer.h" />
-    <ClInclude Include="grid.h" />
-    <ClInclude Include="logger.h" />
-    <ClInclude Include="palette.h" />
-    <ClInclude Include="resource.h" />
+    <ClInclude Include="game_grid.h" />
+    <ClInclude Include="game_logger.h" />
+    <ClInclude Include="game_palette.h" />
+    <ClInclude Include="game_resource.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

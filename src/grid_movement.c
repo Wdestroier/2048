@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "grid.h"
+#include "game_grid.h"
 
 bool grid_move_up()
 {

@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include "grid.h"
+#include "game_grid.h"
 
 #define GRID_SIDE_SIZE (sizeof(game_grid)/sizeof(game_grid[0]))
 

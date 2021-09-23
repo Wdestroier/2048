@@ -6,7 +6,7 @@
 #include <string.h>
 
 #include "game.h"
-#include "resource.h"
+#include "game_resource.h"
 #include "game_font.h"
 
 char* resource_extract(char* file_name, char* file_bytes, size_t file_length)

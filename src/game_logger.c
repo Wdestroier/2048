@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "logger.h"
+#include "game_logger.h"
 
 char* get_current_time()
 {

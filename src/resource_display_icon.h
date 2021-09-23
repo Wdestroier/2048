@@ -2,7 +2,7 @@
 
 #include "game.h"
 
-static ALLEGRO_BITMAP* game_get_icon()
+static ALLEGRO_BITMAP* display_get_icon()
 {
 	ALLEGRO_BITMAP* icon = al_create_bitmap(16, 16);
 

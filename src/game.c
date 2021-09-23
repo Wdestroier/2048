@@ -10,15 +10,13 @@
 #include <allegro5/allegro_image.h>
 
 #include "game.h"
-#include "logger.h"
-#include "resource.h"
-#include "resource_icon.h"
+#include "game_logger.h"
+#include "game_resource.h"
+#include "resource_display_icon.h"
 #include "game_mouse.h"
 #include "game_renderer.h"
-#include "font_renderer.h"
+#include "game_font.h"
 #include "game_keyboard.h"
-
-#define FPS 20
 
 char* game_executable_path;
 ALLEGRO_DISPLAY* game_display;
@@ -29,8 +27,8 @@ void game_run(char* executable_path)
 
 	game_executable_path = executable_path;
 
-	srand(time(0));
-
+	srand((unsigned int)time(0));
+	
 	if (!al_init())
 	{
 		log_error("Could not initialize Allegro");
@@ -55,9 +53,9 @@ void game_run(char* executable_path)
 	al_init_ttf_addon();
 	al_init_image_addon();
 
-	ALLEGRO_BITMAP* icon = game_get_icon();
+	ALLEGRO_BITMAP* display_icon = display_get_icon();
 
-	al_set_display_icon(game_display, icon);
+	al_set_display_icon(game_display, display_icon);
 
 	font_load_all();
 
@@ -67,7 +65,8 @@ void game_run(char* executable_path)
 	al_register_event_source(event_queue, al_get_keyboard_event_source());
 	al_register_event_source(event_queue, al_get_display_event_source(game_display));
 
-	ALLEGRO_TIMER* timer = al_create_timer(1.0 / FPS);
+	const int fps = 30;
+	ALLEGRO_TIMER* timer = al_create_timer(1.0 / fps);
 	al_register_event_source(event_queue, al_get_timer_event_source(timer));
 	al_start_timer(timer);
 

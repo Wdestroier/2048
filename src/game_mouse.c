@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-#include "logger.h"
+#include "game_logger.h"
 #include "game_mouse.h"
 #include "game_renderer.h"
-#include "grid.h"
+#include "game_grid.h"
 
 void mouse_press(int button, int x, int y)
 {

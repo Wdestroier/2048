@@ -18,19 +18,10 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="logger.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="game.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="game_keyboard.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="grid.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="font_renderer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="game_mouse.c">
@@ -42,15 +33,21 @@
     <ClCompile Include="grid_movement.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="resource.c">
+    <ClCompile Include="game_font.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_logger.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_grid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_resource.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game_renderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="logger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="game.h">
@@ -59,26 +56,29 @@
     <ClInclude Include="game_keyboard.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="grid.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="font_renderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="game_mouse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="palette.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="resource_icon.h">
+    <ClInclude Include="resource_helvetica_font.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource_font.h">
+    <ClInclude Include="resource_display_icon.h">
       <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_palette.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

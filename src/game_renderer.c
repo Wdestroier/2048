@@ -7,10 +7,10 @@
 #include <allegro5/allegro_primitives.h>
 
 #include "game.h"
-#include "grid.h"
-#include "palette.h"
+#include "game_grid.h"
+#include "game_palette.h"
 #include "game_renderer.h"
-#include "font_renderer.h"
+#include "game_font.h"
 
 GameScreen game_current_screen = GameScreen_HOME;
 GameButtonPosition game_play_button_position = { 0 };
