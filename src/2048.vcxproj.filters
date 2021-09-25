@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\screens">
+      <UniqueIdentifier>{df9cade0-1fa0-40f9-b62a-e90baa634bc0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -30,9 +33,6 @@
     <ClCompile Include="game_renderer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="grid_movement.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="game_font.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -44,6 +44,18 @@
     </ClCompile>
     <ClCompile Include="game_resource.c">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_grid_movement.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_victory_screen.c">
+      <Filter>Source Files\screens</Filter>
+    </ClCompile>
+    <ClCompile Include="game_home_screen.c">
+      <Filter>Source Files\screens</Filter>
+    </ClCompile>
+    <ClCompile Include="game_ingame_screen.c">
+      <Filter>Source Files\screens</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

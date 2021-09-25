@@ -19,6 +19,8 @@
 #include "game_keyboard.h"
 
 char* game_executable_path;
+char* game_folder;
+
 ALLEGRO_DISPLAY* game_display;
 
 void game_run(char* executable_path)
@@ -26,6 +28,7 @@ void game_run(char* executable_path)
 	log_info("Starting game");
 
 	game_executable_path = executable_path;
+	game_folder = game_get_folder();
 
 	srand((unsigned int)time(0));
 	
@@ -54,7 +57,6 @@ void game_run(char* executable_path)
 	al_init_image_addon();
 
 	ALLEGRO_BITMAP* display_icon = display_get_icon();
-
 	al_set_display_icon(game_display, display_icon);
 
 	font_load_all();
@@ -84,11 +86,11 @@ void game_run(char* executable_path)
 
 			break;
 		case ALLEGRO_EVENT_KEY_DOWN:
-			keyboard_keypress(event.keyboard.keycode);
+			keyboard_key_down(event.keyboard.keycode);
 
 			break;
 		case ALLEGRO_EVENT_MOUSE_BUTTON_DOWN:
-			mouse_press(event.mouse.button, event.mouse.x, event.mouse.y);
+			mouse_button_down(event.mouse.button, event.mouse.x, event.mouse.y);
 
 			break;
 		case ALLEGRO_EVENT_DISPLAY_RESIZE:

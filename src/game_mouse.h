@@ -1,3 +1,3 @@
 #pragma once
 
-void mouse_press(int button, int x, int y);
+void mouse_button_down(int button, int x, int y);

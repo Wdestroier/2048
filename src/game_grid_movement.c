@@ -6,14 +6,12 @@ bool grid_move_up()
 {
 	bool moved_any_square = false;
 
-	int grid_square_count = sizeof game_grid[0] / sizeof game_grid[0][0];
-
 	// Move all squares up
-	for (int i = 0; i < grid_square_count - 1; i++)
+	for (int i = 0; i < GRID_SIDE_SQUARE_COUNT - 1; i++)
 	{
-		for (int r = 0; r < grid_square_count; r++)
+		for (int r = 0; r < GRID_SIDE_SQUARE_COUNT; r++)
 		{
-			for (int c = grid_square_count - 1; c > 0; c--)
+			for (int c = GRID_SIDE_SQUARE_COUNT - 1; c > 0; c--)
 			{
 				int current_square_value = game_grid[c][r];
 				int previous_square_value = game_grid[c - 1][r];
@@ -30,9 +28,9 @@ bool grid_move_up()
 	}
 
 	// Merge equal squares
-	for (int r = 0; r < grid_square_count; r++)
+	for (int r = 0; r < GRID_SIDE_SQUARE_COUNT; r++)
 	{
-		for (int c = grid_square_count - 1; c > 0; c--)
+		for (int c = GRID_SIDE_SQUARE_COUNT - 1; c > 0; c--)
 		{
 			int current_square_value = game_grid[c][r];
 			int previous_square_value = game_grid[c - 1][r];
@@ -48,11 +46,11 @@ bool grid_move_up()
 	}
 
 	// Move all squares up
-	for (int i = 0; i < grid_square_count - 1; i++)
+	for (int i = 0; i < GRID_SIDE_SQUARE_COUNT - 1; i++)
 	{
-		for (int r = 0; r < grid_square_count; r++)
+		for (int r = 0; r < GRID_SIDE_SQUARE_COUNT; r++)
 		{
-			for (int c = grid_square_count - 1; c > 0; c--)
+			for (int c = GRID_SIDE_SQUARE_COUNT - 1; c > 0; c--)
 			{
 				int current_square_value = game_grid[c][r];
 				int previous_square_value = game_grid[c - 1][r];
@@ -75,14 +73,12 @@ bool grid_move_down()
 {
 	bool moved_any_square = false;
 
-	int grid_square_count = sizeof game_grid[0] / sizeof game_grid[0][0];
-
 	// Move all squares down
-	for (int i = 0; i < grid_square_count - 1; i++)
+	for (int i = 0; i < GRID_SIDE_SQUARE_COUNT - 1; i++)
 	{
-		for (int r = 0; r < grid_square_count; r++)
+		for (int r = 0; r < GRID_SIDE_SQUARE_COUNT; r++)
 		{
-			for (int c = 0; c < grid_square_count - 1; c++)
+			for (int c = 0; c < GRID_SIDE_SQUARE_COUNT - 1; c++)
 			{
 				int current_square_value = game_grid[c][r];
 				int next_square_value = game_grid[c + 1][r];
@@ -99,9 +95,9 @@ bool grid_move_down()
 	}
 
 	// Merge equal squares
-	for (int r = 0; r < grid_square_count; r++)
+	for (int r = 0; r < GRID_SIDE_SQUARE_COUNT; r++)
 	{
-		for (int c = 0; c < grid_square_count - 1; c++)
+		for (int c = 0; c < GRID_SIDE_SQUARE_COUNT - 1; c++)
 		{
 			int current_square_value = game_grid[c][r];
 			int next_square_value = game_grid[c + 1][r];
@@ -118,11 +114,11 @@ bool grid_move_down()
 	}
 
 	// Move all squares down
-	for (int i = 0; i < grid_square_count - 1; i++)
+	for (int i = 0; i < GRID_SIDE_SQUARE_COUNT - 1; i++)
 	{
-		for (int r = 0; r < grid_square_count; r++)
+		for (int r = 0; r < GRID_SIDE_SQUARE_COUNT; r++)
 		{
-			for (int c = 0; c < grid_square_count - 1; c++)
+			for (int c = 0; c < GRID_SIDE_SQUARE_COUNT - 1; c++)
 			{
 				int current_square_value = game_grid[c][r];
 				int next_square_value = game_grid[c + 1][r];
@@ -145,14 +141,12 @@ bool grid_move_left()
 {
 	bool moved_any_square = false;
 
-	int grid_square_count = sizeof game_grid[0] / sizeof game_grid[0][0];
-
 	// Move all squares to the left
-	for (int i = 0; i < grid_square_count - 1; i++)
+	for (int i = 0; i < GRID_SIDE_SQUARE_COUNT - 1; i++)
 	{
-		for (int r = 0; r < grid_square_count; r++)
+		for (int r = 0; r < GRID_SIDE_SQUARE_COUNT; r++)
 		{
-			for (int c = grid_square_count - 1; c > 0; c--)
+			for (int c = GRID_SIDE_SQUARE_COUNT - 1; c > 0; c--)
 			{
 				int current_square_value = game_grid[r][c];
 				int previous_square_value = game_grid[r][c - 1];
@@ -169,9 +163,9 @@ bool grid_move_left()
 	}
 
 	// Merge equal squares
-	for (int r = 0; r < grid_square_count; r++)
+	for (int r = 0; r < GRID_SIDE_SQUARE_COUNT; r++)
 	{
-		for (int c = grid_square_count - 1; c > 0; c--)
+		for (int c = GRID_SIDE_SQUARE_COUNT - 1; c > 0; c--)
 		{
 			int current_square_value = game_grid[r][c];
 			int previous_square_value = game_grid[r][c - 1];
@@ -187,11 +181,11 @@ bool grid_move_left()
 	}
 
 	// Move all squares to the left
-	for (int i = 0; i < grid_square_count - 1; i++)
+	for (int i = 0; i < GRID_SIDE_SQUARE_COUNT - 1; i++)
 	{
-		for (int r = 0; r < grid_square_count; r++)
+		for (int r = 0; r < GRID_SIDE_SQUARE_COUNT; r++)
 		{
-			for (int c = grid_square_count - 1; c > 0; c--)
+			for (int c = GRID_SIDE_SQUARE_COUNT - 1; c > 0; c--)
 			{
 				int current_square_value = game_grid[r][c];
 				int previous_square_value = game_grid[r][c - 1];
@@ -214,14 +208,12 @@ bool grid_move_right()
 {
 	bool moved_any_square = false;
 
-	int grid_square_count = sizeof game_grid[0] / sizeof game_grid[0][0];
-
 	// Move all squares to the right
-	for (int i = 0; i < grid_square_count - 1; i++)
+	for (int i = 0; i < GRID_SIDE_SQUARE_COUNT - 1; i++)
 	{
-		for (int r = 0; r < grid_square_count; r++)
+		for (int r = 0; r < GRID_SIDE_SQUARE_COUNT; r++)
 		{
-			for (int c = 0; c < grid_square_count - 1; c++)
+			for (int c = 0; c < GRID_SIDE_SQUARE_COUNT - 1; c++)
 			{
 				int current_square_value = game_grid[r][c];
 				int next_square_value = game_grid[r][c + 1];
@@ -238,9 +230,9 @@ bool grid_move_right()
 	}
 
 	// Merge equal squares
-	for (int r = 0; r < grid_square_count; r++)
+	for (int r = 0; r < GRID_SIDE_SQUARE_COUNT; r++)
 	{
-		for (int c = 0; c < grid_square_count - 1; c++)
+		for (int c = 0; c < GRID_SIDE_SQUARE_COUNT - 1; c++)
 		{
 			int current_square_value = game_grid[r][c];
 
@@ -260,11 +252,11 @@ bool grid_move_right()
 	}
 
 	// Move all squares to the right
-	for (int i = 0; i < grid_square_count - 1; i++)
+	for (int i = 0; i < GRID_SIDE_SQUARE_COUNT - 1; i++)
 	{
-		for (int r = 0; r < grid_square_count; r++)
+		for (int r = 0; r < GRID_SIDE_SQUARE_COUNT; r++)
 		{
-			for (int c = 0; c < grid_square_count - 1; c++)
+			for (int c = 0; c < GRID_SIDE_SQUARE_COUNT - 1; c++)
 			{
 				int current_square_value = game_grid[r][c];
 				int next_square_value = game_grid[r][c + 1];

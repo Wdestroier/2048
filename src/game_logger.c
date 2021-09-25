@@ -6,7 +6,7 @@
 
 #include "game_logger.h"
 
-char* get_current_time()
+char* logger_get_current_time()
 {
     time_t now;
     time(&now);
@@ -23,7 +23,7 @@ char* get_current_time()
 
 void log_level(char* level, char* message)
 {
-    char* current_time = get_current_time();
+    char* current_time = logger_get_current_time();
 
     printf("%s [%s] %s\n", current_time, level, message);
 

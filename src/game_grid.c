@@ -4,19 +4,17 @@
 
 #include "game_grid.h"
 
-#define GRID_SIDE_SIZE (sizeof(game_grid)/sizeof(game_grid[0]))
-
 GameGrid game_grid = { 0 };
 
 int* grid_find_free_square()
 {
 	int valid_square_count = 0;
 
-	int* valid_squares[GRID_SIDE_SIZE * GRID_SIDE_SIZE];
+	int* valid_squares[GRID_SIDE_SQUARE_COUNT * GRID_SIDE_SQUARE_COUNT];
 
-	for (int r = 0; r < GRID_SIDE_SIZE; r++)
+	for (int r = 0; r < GRID_SIDE_SQUARE_COUNT; r++)
 	{
-		for (int c = 0; c < GRID_SIDE_SIZE; c++)
+		for (int c = 0; c < GRID_SIDE_SQUARE_COUNT; c++)
 		{
 			if (game_grid[r][c] == 0)
 			{
@@ -38,6 +36,11 @@ int* grid_find_free_square()
 	}
 
 	return square;
+}
+
+bool grid_is_full()
+{
+	return grid_find_free_square() == 0;
 }
 
 bool grid_spawn_square(int value)

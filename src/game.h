@@ -4,6 +4,7 @@
 #include <allegro5/allegro_primitives.h>
 
 extern char* game_executable_path;
+extern char* game_folder;
 
 //TODO If the project has errors related to allegro_font.h, then comment these lines in allegro_font.h:
 //ALLEGRO_FONT_PRINTFUNC(void, al_draw_textf, (const ALLEGRO_FONT *font, ALLEGRO_COLOR color, float x, float y, int flags, char const *format, ...), 6, 7);

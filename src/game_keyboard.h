@@ -1,3 +1,3 @@
 #pragma once
 
-void keyboard_keypress(int keycode);
+void keyboard_key_down(int key_code);

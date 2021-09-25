@@ -161,11 +161,14 @@
   <ItemGroup>
     <ClCompile Include="game_font.c" />
     <ClCompile Include="game.c" />
+    <ClCompile Include="game_home_screen.c" />
+    <ClCompile Include="game_ingame_screen.c" />
     <ClCompile Include="game_keyboard.c" />
     <ClCompile Include="game_mouse.c" />
     <ClCompile Include="game_grid.c" />
-    <ClCompile Include="grid_movement.c" />
+    <ClCompile Include="game_grid_movement.c" />
     <ClCompile Include="game_logger.c" />
+    <ClCompile Include="game_victory_screen.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="game_renderer.c" />
     <ClCompile Include="game_resource.c" />
